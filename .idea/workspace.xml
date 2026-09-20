@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12cb9a44-1d51-4e8f-a75c-e0e8643d82ca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="12cb9a44-1d51-4e8f-a75c-e0e8643d82ca" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +37,65 @@
     "accountId": "d8391174-769b-45ed-991b-1ff9b0728e39"
   }
 }]]></component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.006785201070132" />
+      <entry key="MS500" value="1.7966259692429727" />
+      <entry key="S2" value="3.863087392551497" />
+      <entry key="S5" value="4.956410469461334" />
+      <entry key="S10" value="5.43901069476588" />
+      <entry key="S30" value="5.803407671645331" />
+      <entry key="S60" value="5.90044391984197" />
+      <entry key="M2" value="5.949902244130814" />
+      <entry key="M5" value="5.9798835506422625" />
+      <entry key="M10" value="5.989928832508344" />
+      <entry key="M15" value="5.993283008319262" />
+      <entry key="M30" value="5.996640063188759" />
+      <entry key="H1" value="5.998319671171343" />
+      <entry key="H2" value="5.99915974545736" />
+      <entry key="H4" value="5.999579850193781" />
+      <entry key="D1" value="5.99992997190221" />
+      <entry key="W1" value="5.999989995909371" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9656236737613153" />
+      <entry key="MS500" value="1.7072533014556215" />
+      <entry key="S2" value="3.760632665789703" />
+      <entry key="S5" value="4.898097564055744" />
+      <entry key="S10" value="5.406051822164727" />
+      <entry key="S30" value="5.791467582727993" />
+      <entry key="S60" value="5.89434710878928" />
+      <entry key="M2" value="5.9468215508855184" />
+      <entry key="M5" value="5.978643446659034" />
+      <entry key="M10" value="5.98930746954332" />
+      <entry key="M15" value="5.9928684745297245" />
+      <entry key="M30" value="5.996432650266012" />
+      <entry key="H1" value="5.998215928180163" />
+      <entry key="H2" value="5.999107864826466" />
+      <entry key="H4" value="5.999553907594153" />
+      <entry key="D1" value="5.999925647818328" />
+      <entry key="W1" value="5.999989378175332" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5,
   &quot;fromUser&quot;: false
@@ -60,7 +117,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature-my-work",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/irink/IdeaProjects/OpenCart",
