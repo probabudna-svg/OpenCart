@@ -11,24 +11,16 @@ import java.time.Duration;
 
 public class BaseHelper {
 
-
-
-
-
     public abstract class BasePage  {
         protected WebDriver driver;
         public static JavascriptExecutor js;
-        //public static Actions actions;
-        //String browser;
+
 
         public BasePage(WebDriver driver) {
             this.driver = driver;
             js = (JavascriptExecutor) driver;
-            //PageFactory.initElements(driver, this);
-            //actions = new Actions(driver);
+
         }
-
-
         public void click (WebElement element){
             element.click();
         }
@@ -40,7 +32,6 @@ public class BaseHelper {
                 element.sendKeys(text);
             }
         }
-
         public void scrollWithJS(WebElement element){
             js.executeScript("arguments[0].scrollIntoView(true);", element);
         }
@@ -58,9 +49,12 @@ public class BaseHelper {
         public WebDriverWait getWait(int time) {
             return new WebDriverWait(driver, Duration.ofSeconds(time));
         }
-
     }
-
 }
 
 
+//public static Actions actions;
+//String browser;
+
+//PageFactory.initElements(driver, this);
+//actions = new Actions(driver);
