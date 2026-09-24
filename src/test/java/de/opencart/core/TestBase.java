@@ -3,29 +3,29 @@ package de.opencart.core;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.Browser;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 
 import java.time.Duration;
 
 public class TestBase {
 
-    WebDriver driver;
+    protected static ApplicationManager app =
+            new ApplicationManager(System.getProperty("browser", Browser.CHROME.browserName()));
 
-    @BeforeMethod
+    // @BeforeMethod
+    @BeforeSuite
     public void setUp() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.get("https://opencart.abstracta.us");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        app.start();
     }
 
-    @AfterMethod(enabled = false)
+    // @AfterMethod
+    @AfterSuite(enabled = true)
     public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
+        app.stop();
     }
 
 }
