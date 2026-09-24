@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12cb9a44-1d51-4e8f-a75c-e0e8643d82ca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="12cb9a44-1d51-4e8f-a75c-e0e8643d82ca" name="Changes" comment="add 1.2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,9 +74,22 @@
       <option name="presentableId" value="Default" />
       <updated>1789487968701</updated>
     </task>
+    <task id="LOCAL-00001" summary="add 1.2">
+      <option name="closed" value="true" />
+      <created>1789636722971</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1789636722971</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add 1.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 1.2" />
   </component>
 </project>
