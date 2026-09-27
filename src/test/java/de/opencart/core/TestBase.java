@@ -13,9 +13,9 @@ import java.time.Duration;
 
 public class TestBase {
 
-    protected static ApplicationManager app =
-            new ApplicationManager(System.getProperty("browser", Browser.CHROME.browserName()));
-
+   // protected static ApplicationManager app =
+         //   new ApplicationManager(System.getProperty("browser", Browser.CHROME.browserName()));
+/*
     // @BeforeMethod
     @BeforeSuite
     public void setUp() {
@@ -27,5 +27,25 @@ public class TestBase {
     public void tearDown() {
         app.stop();
     }
+
+ */
+
+    protected WebDriver driver;
+@BeforeMethod
+public void setUp() {
+    WebDriverManager.chromedriver().setup();
+    driver = new ChromeDriver();
+    driver.get("https://opencart.abstracta.us");
+    driver.manage().window().maximize();
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+}
+
+    @AfterMethod(enabled = false)
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
+
 
 }
