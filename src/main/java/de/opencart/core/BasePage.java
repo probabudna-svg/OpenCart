@@ -1,6 +1,5 @@
 package de.opencart.core;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -53,10 +52,4 @@ public abstract class BasePage {
                 Duration.ofSeconds(time)
         );
     }
-
-    public boolean isElementPresent(By locator){
-        return driver.findElements(locator).size() > 0;
-    }
-
-
 }
