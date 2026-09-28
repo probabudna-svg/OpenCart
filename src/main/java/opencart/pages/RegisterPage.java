@@ -3,6 +3,7 @@ package opencart.pages;
 import opencart.core.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import java.util.Random;
 
 public class RegisterPage extends BasePage {
 
@@ -128,13 +129,15 @@ public class RegisterPage extends BasePage {
     }
 
     public String newEmaile() {
-        int i =
-                (int) ((System.currentTimeMillis() / 1000) % 3600);
+        String letters = "abcdefghijklmnopqrstuvwxyz";
+        Random random = new Random();
+        StringBuilder email = new StringBuilder();
 
-        String email =
-                "Sw" + i + "@gmail.com";
+        for (int i = 0; i < 10; i++) {
+            email.append(letters.charAt(random.nextInt(letters.length())));
+        }
 
-        return email;
+        return email + "@gmail.com";
     }
 
     public boolean isErrorsPresent() {

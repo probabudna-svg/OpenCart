@@ -20,8 +20,44 @@ test {
     useTestNG()
 }
 
-tasks.register('launcher', JavaExec) {
+tasks.register('launcherJar', Jar) {
     dependsOn classes, testClasses
-    classpath = sourceSets.main.runtimeClasspath + sourceSets.test.runtimeClasspath
-    mainClass = 'opencart.launcher.TestLauncher'
+    archiveFileName = 'OpenCartAutomation.jar'
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    from sourceSets.main.output
+    from sourceSets.test.output
+    from {
+        (sourceSets.main.runtimeClasspath + sourceSets.test.runtimeClasspath)
+                .filter { it.exists() }
+                .collect { it.isDirectory() ? it : zipTree(it) }
+    }
+
+    exclude 'META-INF/*.SF', 'META-INF/*.DSA', 'META-INF/*.RSA'
+
+    manifest {
+        attributes 'Main-Class': 'opencart.launcher.TestLauncher'
+    }
 }
+
+tasks.register('buildExe', Exec) {
+    dependsOn launcherJar
+
+    doFirst {
+        delete layout.buildDirectory.dir('installer')
+    }
+
+    commandLine 'jpackage',
+            '--type', 'exe',
+            '--name', 'OpenCartAutomation',
+            '--input', layout.buildDirectory.dir('libs').get().asFile.absolutePath,
+            '--main-jar', 'OpenCartAutomation.jar',
+            '--main-class', 'opencart.launcher.TestLauncher',
+            '--dest', layout.buildDirectory.dir('installer').get().asFile.absolutePath,
+            '--app-version', '1.1.0',
+            '--vendor', 'OpenCart QA Team',
+            '--win-menu',
+            '--win-shortcut',
+            '--win-dir-chooser'
+}
+
