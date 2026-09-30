@@ -20,8 +20,6 @@ public class RegisteredCheckoutTests extends TestBase {
         checkoutPage.addProductToCart();
         checkoutPage.openCart();
         checkoutPage.clickCheckout();
-//        checkoutPage.fillBillingAddress();
-
         checkoutPage.continueFromBillingAddress();
         checkoutPage.continueWithSavedShippingAddress();
         checkoutPage.selectFlatRateShipping();
@@ -32,11 +30,9 @@ public class RegisteredCheckoutTests extends TestBase {
         checkoutPage.confirmOrder();
         checkoutPage.waitForOrderSuccess();
 
-        // Vorläufig prüfen wir, dass der Checkout weiterhin geöffnet ist.
         Assert.assertTrue(driver.getCurrentUrl().contains("route=checkout/"),
                 "Der Checkout ist nach dem Rechnungsadress-Schritt nicht mehr geöffnet.");
-        Assert.assertEquals(
-                checkoutPage.getOrderSuccessMessage(),
+        Assert.assertEquals(checkoutPage.getOrderSuccessMessage(),
                 "Your order has been placed!",
                 "Die Bestellbestätigungsseite wurde nicht angezeigt.");
     }

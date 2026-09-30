@@ -17,28 +17,20 @@ public class RegistrationTests extends TestBase {
 
         String email = "Testergroup21@gmail.com";
 
-        registerPage.registerUser(
-                "Testergroup2",
-                "Testergroup2a",
-                email,
-                "+4912345678",
-                "123456789Abc!"
-        );
+        registerPage.registerUser("Testergrou2",
+                "Testegroup2a", email,
+                "+4912345678", "123456789Abc!");
 
         String actualMessage = driver
-                .findElement(By.cssSelector("#content p"))
-                .getText();
+                .findElement(By.cssSelector("#content p")).getText();
 
-        Assert.assertEquals(
-                actualMessage,
-                "Congratulations! Your new account has been successfully created!"
-        );
+        Assert.assertEquals(actualMessage,
+                "Congratulations! Your new account has been successfully created!");
 
         driver.findElement(By.cssSelector(".buttons .btn-primary")).click();
 
         String accountTitle = driver
-                .findElement(By.cssSelector("#content h2"))
-                .getText();
+                .findElement(By.cssSelector("#content h2")).getText();
 
         Assert.assertEquals(accountTitle, "My Account");
     }

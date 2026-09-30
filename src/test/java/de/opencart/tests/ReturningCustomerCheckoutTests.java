@@ -20,18 +20,15 @@ public class ReturningCustomerCheckoutTests extends TestBase {
 
         checkoutPage.enterReturningCustomerCredentials(
                 "Testergroup2@gmail.com",
-                "123456789Abc!"
-        );
+                "123456789Abc!");
 
         checkoutPage.clickReturningCustomerLogin();
 
-        Assert.assertTrue(
-                new org.openqa.selenium.support.ui.WebDriverWait(
+        Assert.assertTrue(new org.openqa.selenium.support.ui.WebDriverWait(
                         driver, java.time.Duration.ofSeconds(10))
                         .until(ExpectedConditions.textToBePresentInElementLocated(
                                 By.id("accordion"), "Billing Details")),
-                "Nach dem Login wurden die Billing Details nicht angezeigt"
-        );
+                "Nach dem Login wurden die Billing Details nicht angezeigt");
     }
 }
 

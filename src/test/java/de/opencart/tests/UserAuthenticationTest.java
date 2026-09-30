@@ -38,9 +38,7 @@ public class UserAuthenticationTest extends TestBase {
     @Test
     public void loginWithValidCredentials() {
 
-
         driver.get("https://opencart.abstracta.us/index.php?route=account/login");
-
 
         LoginPage loginPage = new LoginPage(driver);
 
@@ -57,8 +55,7 @@ public class UserAuthenticationTest extends TestBase {
                 ExpectedConditions.visibilityOfElementLocated(
                         By.cssSelector("#content h2"))).getText();
 
-        Assert.assertEquals(actualHeading,
-                "My Account",
+        Assert.assertEquals(actualHeading, "My Account",
                 "The My Account page was not displayed");
     }
 }

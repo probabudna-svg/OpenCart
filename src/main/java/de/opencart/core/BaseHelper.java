@@ -18,14 +18,11 @@ public class BaseHelper {
     public abstract class BasePage  {
         protected WebDriver driver;
         public static JavascriptExecutor js;
-        //public static Actions actions;
-        //String browser;
 
         public BasePage(WebDriver driver) {
             this.driver = driver;
             js = (JavascriptExecutor) driver;
-            //PageFactory.initElements(driver, this);
-            //actions = new Actions(driver);
+
         }
 
 

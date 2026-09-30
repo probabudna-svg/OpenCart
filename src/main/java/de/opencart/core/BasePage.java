@@ -32,8 +32,7 @@ public abstract class BasePage {
     public void scrollWithJS(WebElement element) {
         js.executeScript(
                 "arguments[0].scrollIntoView(true);",
-                element
-        );
+                element);
     }
 
     public void clickWithJS(WebElement element) {
@@ -49,7 +48,6 @@ public abstract class BasePage {
     public WebDriverWait getWait(int time) {
         return new WebDriverWait(
                 driver,
-                Duration.ofSeconds(time)
-        );
+                Duration.ofSeconds(time));
     }
 }

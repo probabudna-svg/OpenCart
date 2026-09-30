@@ -12,12 +12,8 @@ public class RegisterPage extends BasePage {
     private By telephoneInput = By.id("input-telephone");
     private By passwordInput = By.id("input-password");
     private By confirmPasswordInput = By.id("input-confirm");
-
-    private By privacyPolicyCheckbox =
-            By.name("agree");
-
-    private By continueButton =
-            By.cssSelector("input[value='Continue']");
+    private By privacyPolicyCheckbox = By.name("agree");
+    private By continueButton = By.cssSelector("input[value='Continue']");
 
     public RegisterPage(WebDriver driver) {
         super(driver);

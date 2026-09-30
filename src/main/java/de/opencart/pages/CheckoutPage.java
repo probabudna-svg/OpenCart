@@ -238,17 +238,6 @@ public class CheckoutPage extends BasePage {
             checkbox.click();
         }
     }
-//    public void confirmOrder() {
-//        getWait(10)
-//                .until(ExpectedConditions.elementToBeClickable(confirmOrderButton))
-//                .click();
-//    }
-//
-//    public void waitForOrderSuccess() {
-//        getWait(10).until(
-//                ExpectedConditions.urlContains("route=checkout/success")
-//        );
-//    }
 
     public String getOrderSuccessMessage() {
         return getWait(10)
@@ -259,8 +248,3 @@ public class CheckoutPage extends BasePage {
 
 
 }
-//    public void continueFromPaymentMethod() {
-//        getWait(10)
-//                .until(ExpectedConditions.elementToBeClickable(continuePaymentMethodButton))
-//                .click();
-//    }

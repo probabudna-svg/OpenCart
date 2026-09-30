@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12cb9a44-1d51-4e8f-a75c-e0e8643d82ca" name="Changes" comment="" />
+    <list default="true" id="12cb9a44-1d51-4e8f-a75c-e0e8643d82ca" name="Changes" comment="add_1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/opencart/core/BaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/opencart/core/BaseHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/opencart/core/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/opencart/core/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/opencart/pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/opencart/pages/CheckoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/opencart/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/opencart/pages/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/opencart/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/opencart/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/opencart/tests/RegisteredCheckoutTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/opencart/tests/RegisteredCheckoutTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/opencart/tests/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/opencart/tests/RegistrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/opencart/tests/ReturningCustomerCheckoutTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/opencart/tests/ReturningCustomerCheckoutTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/opencart/tests/UserAuthenticationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/opencart/tests/UserAuthenticationTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,67 +54,67 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:probabudna-svg/OpenCart.git&quot;,
-    &quot;accountId&quot;: &quot;8ecffede-2cb8-4235-bbcc-7a520a5bbe77&quot;
+    &quot;url&quot;: &quot;https://github.com/probabudna-svg/OpenCart.git&quot;,
+    &quot;accountId&quot;: &quot;d8391174-769b-45ed-991b-1ff9b0728e39&quot;
   }
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.003615154797154" />
-      <entry key="MS500" value="1.567443875953989" />
-      <entry key="S2" value="3.807167771430991" />
-      <entry key="S5" value="6.371769415760154" />
-      <entry key="S10" value="8.184709528617738" />
-      <entry key="S30" value="10.699516197625385" />
-      <entry key="S60" value="14.131335188244496" />
-      <entry key="M2" value="20.022957476632758" />
-      <entry key="M5" value="31.02776308944898" />
-      <entry key="M10" value="44.231178237055296" />
-      <entry key="M15" value="53.66951549049041" />
-      <entry key="M30" value="69.16288886749798" />
-      <entry key="H1" value="80.67041847432851" />
-      <entry key="H2" value="87.7749817079466" />
-      <entry key="H4" value="91.73757031109126" />
-      <entry key="D1" value="105.97517493365152" />
-      <entry key="W1" value="142.12777887933333" />
+      <entry key="MS100" value="1.0017966554187323" />
+      <entry key="MS500" value="1.4388324869342468" />
+      <entry key="S2" value="2.7518862806482245" />
+      <entry key="S5" value="3.7945614033118527" />
+      <entry key="S10" value="5.475344600646465" />
+      <entry key="S30" value="13.366104984524824" />
+      <entry key="S60" value="22.741072524625423" />
+      <entry key="M2" value="36.084044575496286" />
+      <entry key="M5" value="57.78409053200168" />
+      <entry key="M10" value="78.43790198636651" />
+      <entry key="M15" value="93.70466252998224" />
+      <entry key="M30" value="122.67169099672367" />
+      <entry key="H1" value="147.97570411709808" />
+      <entry key="H2" value="165.30045144205118" />
+      <entry key="H4" value="175.53069439160188" />
+      <entry key="D1" value="195.58066490277588" />
+      <entry key="W1" value="232.868517246459" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
-      <entry key="S5" value="1.3476039763926309E-217" />
-      <entry key="S10" value="3.670972591007216E-109" />
-      <entry key="S30" value="7.160231227331535E-37" />
-      <entry key="S60" value="8.461948462442509E-19" />
-      <entry key="M2" value="9.27665954591911E-10" />
-      <entry key="M5" value="3.362565377880377E-4" />
-      <entry key="M10" value="0.0371388975792549" />
-      <entry key="M15" value="0.19513386387093312" />
-      <entry key="M30" value="1.1104989155793137" />
-      <entry key="H1" value="3.046843298661306" />
-      <entry key="H2" value="5.664053680088124" />
-      <entry key="H4" value="8.104948801071275" />
-      <entry key="D1" value="14.522381991149311" />
-      <entry key="W1" value="22.46931285491761" />
+      <entry key="S5" value="1.2719242482531532E-303" />
+      <entry key="S10" value="3.5664046997685817E-152" />
+      <entry key="S30" value="3.291623906296861E-51" />
+      <entry key="S60" value="5.737358083593085E-26" />
+      <entry key="M2" value="2.4155298484098427E-13" />
+      <entry key="M5" value="1.2385657122271213E-5" />
+      <entry key="M10" value="0.007127761609569192" />
+      <entry key="M15" value="0.06492551693786819" />
+      <entry key="M30" value="0.6405595712315959" />
+      <entry key="H1" value="2.314039733171975" />
+      <entry key="H2" value="4.936142709500116" />
+      <entry key="H4" value="7.566245855099664" />
+      <entry key="D1" value="14.356862850244413" />
+      <entry key="W1" value="22.432547958347715" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9627560024585184" />
-      <entry key="MS500" value="1.5545832109700681" />
-      <entry key="S2" value="3.7989826156222355" />
-      <entry key="S5" value="6.366368049570841" />
-      <entry key="S10" value="8.180009479497965" />
-      <entry key="S30" value="10.68642752097927" />
-      <entry key="S60" value="14.11692133387821" />
-      <entry key="M2" value="20.011905582090876" />
-      <entry key="M5" value="31.022122774039104" />
-      <entry key="M10" value="44.26447497281833" />
-      <entry key="M15" value="53.861170408107405" />
-      <entry key="M30" value="70.26973643556732" />
-      <entry key="H1" value="83.71364172328819" />
-      <entry key="H2" value="93.43604282158064" />
-      <entry key="H4" value="99.8404715143613" />
-      <entry key="D1" value="120.49684686493403" />
-      <entry key="W1" value="164.59689848519847" />
+      <entry key="MS100" value="0.9744021469408383" />
+      <entry key="MS500" value="1.4306569019889008" />
+      <entry key="S2" value="2.724971314124053" />
+      <entry key="S5" value="3.702201289956234" />
+      <entry key="S10" value="5.375802029202448" />
+      <entry key="S30" value="13.309002192682113" />
+      <entry key="S60" value="22.7075693727038" />
+      <entry key="M2" value="36.065383819660134" />
+      <entry key="M5" value="57.77557655405175" />
+      <entry key="M10" value="78.43989265809967" />
+      <entry key="M15" value="93.76542587117824" />
+      <entry key="M30" value="123.30860030393927" />
+      <entry key="H1" value="150.28621061375642" />
+      <entry key="H2" value="170.23359109638562" />
+      <entry key="H4" value="183.09483039283637" />
+      <entry key="D1" value="209.9367926121448" />
+      <entry key="W1" value="255.30086752996502" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -133,6 +144,7 @@
     "Gradle.RegistrationTests.executor": "Run",
     "Gradle.RegistrationTests.registrationPositiveTest.executor": "Run",
     "Gradle.ReturningCustomerCheckoutTests.returningCustomerCanStartCheckout.executor": "Run",
+    "Gradle.Tests in 'de.opencart.tests'.executor": "Run",
     "Gradle.UserAuthenticationTest.loginWithInvalidCredentials.executor": "Run",
     "Gradle.UserAuthenticationTest.loginWithValidCredentials.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -142,7 +154,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/irink/IdeaProjects/OpenCartMain",
@@ -155,7 +167,7 @@
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.ContactUsTests.submitContactUsForm">
+  <component name="RunManager" selected="Gradle.RegistrationTests.registrationPositiveTest">
     <configuration name="ContactUsTests.contactUsPageOpens" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -210,33 +222,6 @@
       <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
-    <configuration name="GuestCheckoutTests.openCheckoutFromCart" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;de.opencart.tests.GuestCheckoutTests.openCheckoutFromCart&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <GradleProfilingDisabled>false</GradleProfilingDisabled>
-      <GradleCoverageDisabled>false</GradleCoverageDisabled>
-      <method v="2" />
-    </configuration>
     <configuration name="RegisteredCheckoutTests.registeredCustomerCheckout" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -264,7 +249,7 @@
       <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
-    <configuration name="ReturningCustomerCheckoutTests.returningCustomerCanStartCheckout" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegistrationTests.registrationPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -277,7 +262,34 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;de.opencart.tests.ReturningCustomerCheckoutTests.returningCustomerCanStartCheckout&quot;" />
+            <option value="&quot;de.opencart.tests.RegistrationTests.registrationPositiveTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'de.opencart.tests'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;de.opencart.tests.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -304,11 +316,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RegistrationTests.registrationPositiveTest" />
+        <item itemvalue="Gradle.Tests in 'de.opencart.tests'" />
         <item itemvalue="Gradle.ContactUsTests.submitContactUsForm" />
         <item itemvalue="Gradle.ContactUsTests.contactUsPageOpens" />
         <item itemvalue="Gradle.RegisteredCheckoutTests.registeredCustomerCheckout" />
-        <item itemvalue="Gradle.ReturningCustomerCheckoutTests.returningCustomerCanStartCheckout" />
-        <item itemvalue="Gradle.GuestCheckoutTests.openCheckoutFromCart" />
       </list>
     </recent_temporary>
   </component>

@@ -19,13 +19,10 @@ public class LoginTests extends TestBase {
         driver.get("https://opencart.abstracta.us/index.php?route=account/login");
 
         LoginPage loginPage = new LoginPage(driver);
-
-        loginPage.login(
-                "Testergroup2@gmail.com",
+        loginPage.login("Testergroup2@gmail.com",
                 "123456789Abc!");
 
-        WebDriverWait wait = new WebDriverWait(
-                driver,
+        WebDriverWait wait = new WebDriverWait(driver,
                 Duration.ofSeconds(10));
 
         wait.until(
@@ -41,8 +38,7 @@ public class LoginTests extends TestBase {
     @Test
     public void loginWithInvalidPassword() {
 
-        driver.get(
-                "https://opencart.abstracta.us/index.php?route=account/login");
+        driver.get("https://opencart.abstracta.us/index.php?route=account/login");
 
         LoginPage loginPage = new LoginPage(driver);
 
@@ -62,12 +58,6 @@ public class LoginTests extends TestBase {
                 loginPage.isErrorMessageDisplayed(),
                 "The login error message was not displayed");
 
-//        Assert.assertTrue(
-//                actualMessage.contains("Warning"),
-//                "The expected login error message was not displayed");
 
-//        Assert.assertTrue(
-//                errorMessage.isDisplayed(),
-//                "The error message is not displayed");
     }
 }
