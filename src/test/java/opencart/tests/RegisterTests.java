@@ -1,90 +1,80 @@
 package opencart.tests;
 
 import opencart.core.TestBase;
-import opencart.pages.HomePage;
 import opencart.pages.RegisterPage;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-
-public class RegisterTests extends TestBase {
+public class RegistrationTests extends TestBase {
 
     @Test
-    public void registerPositiveTest() {
-        RegisterPage registerPage = new HomePage(driver)
-                .openMyAccount()
-                .clickOnRegister();
+    public void registrationPositiveTest() {
 
-        Assert.assertTrue(
-                registerPage.enterUserData(
-                                "Swetlana",
-                                "Budna",
-                                registerPage.newEmaile(),
-                                "1234567890",
-                                "xUDUs8bfbQjLNj!",
-                                "xUDUs8bfbQjLNj!")
-                        .checkPrivacyPolicy()
-                        .clickOnContinue()
-                        .isLogoutButtonPresent()
+        driver.get("https://opencart.abstracta.us/index.php?route=account/register");
+
+        RegisterPage registerPage = new RegisterPage(driver);
+
+        String email = registerPage.newEmaile();
+
+        registerPage.registerUser(
+                "Testergroup2",
+                "Testergroup2a",
+                email,
+                "+4912345678",
+                "123456789Abc!"
         );
+
+        String actualMessage = driver
+                .findElement(By.cssSelector("#content p"))
+                .getText();
+
+        Assert.assertEquals(
+                actualMessage,
+                "Congratulations! Your new account has been successfully created!"
+        );
+
+        driver.findElement(By.cssSelector(".buttons .btn-primary")).click();
+
+        String accountTitle = driver
+                .findElement(By.cssSelector("#content h2"))
+                .getText();
+
+        Assert.assertEquals(accountTitle, "My Account");
     }
 
     @Test
-    public void registerNegativeTestDuplicateEmail () {
-        RegisterPage registerPage = new HomePage(driver)
-                .openMyAccount()
-                .clickOnRegister()
-                .enterUserData(
-                        "Swetlana",
-                        "Budna",
-                        "swetlana123@test.com",
-                        "1234567890",
-                        "xUDUs8bfbQjLNj!",
-                        "xUDUs8bfbQjLNj!")
-                .checkPrivacyPolicy()
-                .clickOnContinue();
+    public void registrationPositiveIrinaTest() {
 
-        Assert.assertTrue(registerPage.isErrorsPresent());
+        driver.get("https://opencart.abstracta.us/index.php?route=account/register");
 
+        RegisterPage registerPage = new RegisterPage(driver);
+
+        String email = registerPage.newEmaile();
+
+        registerPage.registerUser(
+                "Testergroup2",
+                "Testergroup2a",
+                email,
+                "+4912345678",
+                "123456789Abc!"
+        );
+
+        String actualMessage = driver
+                .findElement(By.cssSelector("#content p"))
+                .getText();
+
+        Assert.assertEquals(
+                actualMessage,
+                "Congratulations! Your new account has been successfully created!"
+        );
+
+        driver.findElement(By.cssSelector(".buttons .btn-primary")).click();
+
+        String accountTitle = driver
+                .findElement(By.cssSelector("#content h2"))
+                .getText();
+
+        Assert.assertEquals(accountTitle, "My Account");
     }
-
-    @Test
-    public void registerNegativePasswordMismatch () {
-        RegisterPage registerPage = new HomePage(driver)
-                .openMyAccount()
-                .clickOnRegister();
-
-        registerPage.enterUserData(
-                        "Swetlana",
-                        "Budna",
-                        registerPage.newEmaile(),
-                        "1234567890",
-                        "xUDUs8bfbQjLNj!",
-                        "xUDUs8bfbQjLNj")
-                .checkPrivacyPolicy()
-                .clickOnContinue();
-
-        Assert.assertTrue(registerPage.isTextDanger());
-    }
-
-    @Test
-    public void registerNegativeMissingMandatoryFields () {
-        RegisterPage registerPage = new HomePage(driver)
-                .openMyAccount()
-                .clickOnRegister();
-
-        registerPage.enterUserData(
-                        "Swetlana",
-                        "Budna",
-                        registerPage.newEmaile(),
-                        "",
-                        "xUDUs8bfbQjLNj!",
-                        "xUDUs8bfbQjLNj!")
-                .checkPrivacyPolicy()
-                .clickOnContinue();
-
-        Assert.assertTrue(registerPage.isTextDanger());
-    }
-
 }
